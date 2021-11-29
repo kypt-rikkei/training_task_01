@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  node_task_db:
+    image: mysql:5.7
+    environment:
+#      MYSQL_USER: 'root'
+      MYSQL_ALLOW_EMPTY_PASSWORD: 'true'
+      MYSQL_ROOT_PASSWORD: ''
+    ports:
+      - "3340:3306"
