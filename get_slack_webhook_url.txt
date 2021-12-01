@@ -1,0 +1,9 @@
+1. Sau khi đã có 1 Workspace, vào link https://api.slack.com/apps
+2. Chọn "Create New App", 1 cái popup với 2 options hiện lên, chọn option "From scratch"
+    * App ở đây sẽ giống như 1 member trong group chat, khi POST message lên WEB_HOOK_URL thì app đó sẽ bắn message vào slack channel
+3. Nhập tên App muốn tạo, chọn Workspace đã tạo trước đó rồi chọn "Create App"
+4. Khi tạo app thành công, sẽ hiện lên "Basic Information" và "App Credentials", chọn "Incoming Webhooks"
+5. Incoming Webhooks đang tắt, click vào nút off phía bên phải để bật lên, sau đó cửa sổ sẽ hiện thêm "Add New Webhook to Workspace" ở cuối trang
+6. Click vào "Add New Webhook to Workspace", 1 cửa sổ hiện ra để chọn channel (nơi mà App sẽ bắn message vào), chọn channel mong muốn và click vào "Allow"
+7. Cuối cùng, 1 cửa sổ hiện ra và show thông tin, trong đó có Webhook URL với dạng:
+    https://hooks.slack.com/services/****************/*************/*************
