@@ -25,3 +25,4 @@ ioHook.on('keypress', function (event) {
 });
 
 ioHook.start()
+console.log("Capture keypress STARTED ...");

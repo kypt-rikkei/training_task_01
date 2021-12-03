@@ -73,3 +73,4 @@ let sync_job = new CronJob(
 )
 
 sync_job.start()
+console.log("CronJob Upload DB STARTED ...")
