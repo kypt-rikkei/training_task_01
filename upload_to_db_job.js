@@ -28,7 +28,7 @@ async function execute_sync(ip_address) {
     await new Promise((resolve, reject) => {
         conn.query(query, (err, res, fields) => {
             if (!err) {
-                // remove data in corresponding file
+                fs.writeFileSync(ipAddress + '.txt', '')
                 console.log('*** Synchronous complete! Time: ' + new Date().toLocaleString("vi-VN", { timeZone: "Asia/Ho_Chi_Minh" }));
             } else {
                 console.log(err);
@@ -45,7 +45,7 @@ function to_key_and_time(str) {
     str = str.trim()
     let [key, time] = str.split("|")
     key = key.substring(1, key.length - 1)
-    return [key,time]
+    return [key, time]
 }
 
 function build_query(id_address, client_id) {

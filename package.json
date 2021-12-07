@@ -12,7 +12,9 @@
   "dependencies": {
     "cron": "^1.8.2",
     "forever": "^4.0.1",
+    "http": "0.0.1-security",
     "iohook": "^0.6.6",
-    "mysql2": "^2.3.3"
+    "mysql2": "^2.3.3",
+    "url": "^0.11.0"
   }
 }
